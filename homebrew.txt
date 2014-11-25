@@ -1,0 +1,29 @@
+homebrew:
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+brew doctor
+brew install wget
+brew install ffmpeg
+brew install imagemagick
+brew install caskroom/cask/brew-cask
+brew cleanup
+
+brew cask install google-chrome
+brew cask install alfred
+brew cask install intellij-idea-ce
+brew cask install sublime-text
+brew cask install dropbox
+brew cask install iterm2
+brew cask install postgres
+brew cask install pgadmin3
+brew cask install virtualbox
+brew cask install vagrant-manager
+brew cask install cheatsheet
+brew cask install firefox
+
+
+
+
+brew cask alfred link
+
+
+brew cask cleanup
