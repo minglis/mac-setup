@@ -4,6 +4,7 @@ brew doctor
 brew install wget
 brew install ffmpeg
 brew install imagemagick
+brew install libxml2 libxslt
 brew install caskroom/cask/brew-cask
 brew cleanup
 
@@ -19,6 +20,10 @@ brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install cheatsheet
 brew cask install firefox
+brew cask install spotify
+brew cask install adobe-air
+brew cask install scratch
+brew cask install heroku-toolbelt
 
 
 
