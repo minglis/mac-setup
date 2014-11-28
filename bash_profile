@@ -4,6 +4,7 @@
 
 source ~/.git-prompt.sh
 source ~/.git-completion.sh
+source ~/.locations_and_connections
 
 #PS1='[\[\e[0;32m\]\u@\h\[\e[m\]\[\e[0;34m\] \w\[\e[m\]\[\e[m\]\[\e[1;36m\]$(__git_ps1 " (%s)")\[\e[m\]]\$ '
 PS1='\e[0;31m\]\u\[\e[m\]@\e[0;32m\]\h\[\e[m\]\e[0;37m\]:\w\[\e[m\]\n\[\e[1;34m\]$(__git_ps1 "(%s) ")\[\e[m\]\$ '
