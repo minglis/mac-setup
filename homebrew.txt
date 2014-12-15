@@ -2,9 +2,11 @@ homebrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
 brew doctor
 brew install wget
+brew install maven
 brew install ffmpeg
 brew install imagemagick
 brew install libxml2 libxslt
+brew install ansible
 brew install caskroom/cask/brew-cask
 brew cleanup
 
@@ -25,10 +27,5 @@ brew cask install adobe-air
 brew cask install scratch
 brew cask install heroku-toolbelt
 
-
-
-
 brew cask alfred link
-
-
 brew cask cleanup
