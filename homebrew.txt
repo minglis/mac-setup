@@ -7,6 +7,7 @@ brew install ffmpeg
 brew install imagemagick
 brew install libxml2 libxslt
 brew install ansible
+brew install git
 brew install caskroom/cask/brew-cask
 brew cleanup
 

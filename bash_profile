@@ -121,3 +121,21 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
         #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
         echo
     }
+
+
+if which gpg-agent >/dev/null; then
+  GPG_ENV_FILE="${HOME}/.gnupg/gpg-agent.env"
+  if ! pgrep gpg-agent >/dev/null; then
+    gpg-agent --daemon --write-env-file "${GPG_ENV_FILE}" >/dev/null
+  fi
+  if [ -f "${GPG_ENV_FILE}" ]; then
+    source "${GPG_ENV_FILE}"
+    export GPG_AGENT_INFO
+  fi
+fi
+
+## direnv
+eval "$(direnv hook bash)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/martyninglis/.gvm/bin/gvm-init.sh" ]] && source "/Users/martyninglis/.gvm/bin/gvm-init.sh"
